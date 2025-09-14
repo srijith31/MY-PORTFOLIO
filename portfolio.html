@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nakka Srijith - Product Design Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #007bff, #6610f2);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            font-weight: 700;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+            transform: translateY(-2px);
+        }
+        .social-links a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: white;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        .social-links a:hover::after {
+            transform: scaleX(1);
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        section {
+            margin-bottom: 60px;
+        }
+        h2 {
+            font-size: 2em;
+            color: #007bff;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .summary {
+            font-size: 1.1em;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+        .education-item, .project-item, .experience-item {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            margin-bottom: 20px;
+        }
+        .education-item h3, .project-item h3, .experience-item h3 {
+            font-size: 1.5em;
+            color: #6610f2;
+            margin: 0 0 10px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-tag {
+            background: #e9ecef;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            color: #495057;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+        ul li::before {
+            content: "•";
+            color: #007bff;
+            position: absolute;
+            left: 0;
+        }
+        .certifications, .achievements, .interests {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #343a40;
+            color: white;
+            font-size: 0.9em;
+        }
+        @media (max-width: 768px) {
+            header {
+                padding: 50px 20px;
+            }
+            header h1 {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NAKKA SRIJITH</h1>
+        <p>Computer Science Undergraduate | Aspiring Product Designer</p>
+        <p>+91-8328449388 | srijithnakka12@gmail.com | Hyderabad, India</p>
+        <p class="social-links">
+            <a href="https://github.com/srijith31" target="_blank">GitHub</a> | 
+            <a href="https://linkedin.com/in/srijith-nakka-915351327" target="_blank">LinkedIn</a>
+        </p>
+    </header>
+    <div class="container">
+        <section class="summary">
+            <h2>Professional Summary</h2>
+            <p>Motivated and detail-oriented Computer Science undergraduate with a strong foundation in Data Analytics, Artificial Intelligence, Machine Learning, and Full Stack Development. Passionate about applying technical skills to real-world challenges, contributing to impactful projects, and thriving in collaborative environments. Eager to leverage UI/UX design skills in tools like Figma (self-taught), Tkinter, and Streamlit for intuitive product experiences.</p>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Bachelor of Technology in Computer Science and Engineering, VMEG</h3>
+                <p>Vardhaman College of Engineering, Shamshabad | 2024-2027 | CGPA: 8.5</p>
+            </div>
+            <div class="education-item">
+                <h3>Diploma in Computer Science and Engineering (TSSBTET)</h3>
+                <p>Jyothishmathi Institute of Technology and Science, Karimnagar | 2021-2024 | CGPA: 9.64</p>
+            </div>
+            <div class="education-item">
+                <h3>Tenth Class, Telangana Board of Secondary Education (BSET)</h3>
+                <p>Telangana State Model School, Kamalapur | 2021 | CGPA: 10.0</p>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Apex</span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">Django</span>
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">NumPy</span>
+                <span class="skill-tag">OpenCV</span>
+                <span class="skill-tag">Scikit-learn</span>
+                <span class="skill-tag">Matplotlib</span>
+                <span class="skill-tag">Seaborn</span>
+                <span class="skill-tag">Streamlit</span>
+                <span class="skill-tag">Tkinter</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">Linux</span>
+                <span class="skill-tag">Microsoft Office</span>
+                <span class="skill-tag">PowerPoint</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Deep Learning</span>
+                <span class="skill-tag">Prompt Engineering</span>
+                <span class="skill-tag">Salesforce</span>
+                <span class="skill-tag">Software Engineering</span>
+                <span class="skill-tag">Computer Networks</span>
+                <span class="skill-tag">Operating Systems</span>
+                <span class="skill-tag">DBMS</span>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>Deloitte Data Analytics Virtual Internship</h3>
+                <p>Aug 2025</p>
+                <ul>
+                    <li>Analyzed datasets and built dashboards to derive business insights.</li>
+                    <li>Conducted exploratory data analysis using spreadsheets and dashboards.</li>
+                    <li>Built data models and visual reports, applying Excel and SQL concepts to solve case studies.</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>Movie Recommendation System</h3>
+                <p>Jul 2025</p>
+                <ul>
+                    <li>Content-based system to suggest movies based on metadata analysis.</li>
+                    <li>Analyzed large-scale movie metadata to identify viewing patterns and similarities.</li>
+                    <li>Applied Python (Pandas, NumPy) for data cleaning and similarity analysis.</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>Instant Music Recommendation App</h3>
+                <p>Jul 2025</p>
+                <ul>
+                    <li>Built an app recommending songs based on text-based user input.</li>
+                    <li>Processed and structured user-input data using TF-IDF and cosine similarity.</li>
+                    <li>Demonstrated data-driven filtering and insight extraction to improve user experience.</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>Alumni Interconnect System</h3>
+                <p>Apr 2025</p>
+                <ul>
+                    <li>Web portal enabling real-time alumni–student engagement.</li>
+                    <li>Designed features for event tracking, job postings, and mentorship programs.</li>
+                    <li>Applied REST APIs and SQL database queries to manage and analyze interactions.</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>WhatNext Vision Motors</h3>
+                <p>Jul 2025</p>
+                <ul>
+                    <li>AI-enabled Salesforce solution for dealership optimization.</li>
+                    <li>Implemented data rules and triggers to ensure reliable stock tracking and reporting.</li>
+                    <li>Used scheduled Batch Apex processes to automate updates and generate insights.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Python Developer Intern</h3>
+                <p>Micro Information Technology Services, Haryana, Virtual | May 2024 – Jun 2024</p>
+                <ul>
+                    <li>Designed a Python Tkinter-based advanced calculator with 80% focus on scientific functions (e.g., square root, factorial, trigonometry, logarithms) and 20% on memory operations and user-friendly GUI.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Salesforce Developer (Agentblazer Champion Internship)</h3>
+                <p>Salesforce Smartbridge, Virtual | May 2025 – Jul 2025</p>
+                <ul>
+                    <li>Built and deployed a working AI Agent using Salesforce Agentforce.</li>
+                    <li>Implemented data rules, triggers, and ethical AI practices to translate AI concepts into business value.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Data Analytics Virtual Internship</h3>
+                <p>Deloitte (Forage), Virtual | Aug 2025</p>
+                <ul>
+                    <li>Conducted exploratory data analysis and built dashboards for case studies.</li>
+                    <li>Applied EXCEL and TABLEAU to develop visual reports, driving business insights.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="certifications">
+                <p>Infosys Springboard: Artificial Intelligence Primer</p>
+                <p>Infosys Springboard: Principles of Generative AI</p>
+                <p>Salesforce Developer with Agentblazer Champion</p>
+                <p>Data Analytics virtual internship (hosted on Forage)</p>
+            </div>
+        </section>
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <div class="achievements">
+                <p>Coding Competition: Secured 2nd position in college-level coding contest.</p>
+                <p>Cricket Championship: Led school team to 1st place, demonstrating leadership and teamwork.</p>
+            </div>
+        </section>
+        <section id="interests">
+            <h2>Interests</h2>
+            <div class="interests">
+                <p>Playing Cricket</p>
+                <p>Watching Sports</p>
+                <p>Salesforce</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Nakka Srijith. All rights reserved.</p>
+    </footer>
+</body>
+</html>
